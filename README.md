@@ -6,6 +6,14 @@
 
 ------
 
+电脑配置（网卡换成了==Intel@ac3168==无线网卡）：
+
+其他配置看图
+
+![联想小新潮5000-i7-7500u](https://gitee.com/masonsxu/cloudimg/raw/master//img/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E6%BD%AE5000-i7-7500u.jpg)
+
+------
+
 **更新**
 
 > 11/16/2020
