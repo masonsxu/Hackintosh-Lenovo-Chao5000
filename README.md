@@ -11,9 +11,10 @@
 > 1/22/2021
 
 1. 更新 OC 为 0.6.5
-2. 删除图形引导界面
-3. 更新各驱动版本为最新
-4. 解锁 **CFG Lock** （未解锁的请看 [这里](https://blog.csdn.net/one_a_xiaobai/article/details/109705321)）
+2. USB驱动为定制驱动，如果出现不能正常使用，可以使用 **Hackintool** 自己生成定制驱动（USBPorts.text）
+3. 删除图形引导界面
+4. 更新各驱动版本为最新
+5. 解锁 **CFG Lock** （未解锁的请看 [这里](https://blog.csdn.net/one_a_xiaobai/article/details/109705321)）
 
 > 11/16/2020
 
