@@ -19,7 +19,7 @@
 > 1/22/2021
 
 1. 更新 OC 为 0.6.5
-2. USB驱动为定制驱动，如果出现不能正常使用，可以使用 **Hackintool** 自己生成定制驱动（USBPorts.text）
+2. USB驱动 **USBPorts.kext** 为定制驱动，如果出现不能正常使用，可以使用 **Hackintool** 自己生成定制驱动（USBPorts.text）
 3. 删除图形引导界面
 4. 更新各驱动版本为最新
 5. 解锁 **CFG Lock** （未解锁的请看 [这里](https://blog.csdn.net/one_a_xiaobai/article/details/109705321)）
@@ -40,7 +40,7 @@
 
 3. *精简了ACPI文件夹中的文件，删除了一些对系统没有作用的 **.aml**文件*
 
-4. *通过添加 pci编码使得原生电源管理驱动可以加载，通过查看系统报告—>功能扩展—>**AppleLPC** 查看是否加载，如果没有加载请自己修改相关  **pci**，修改方法 https://www.bilibili.com/read/mobile/6353697 如果找不到的话也可以通过 **Hackintool的 PCI** 选项卡看*
+4. *通过添加 pci编码使得 VirtualSMC.kext 可以加载原生电源管理驱动，通过查看系统报告—>功能扩展—>**AppleLPC** 查看是否加载，如果没有加载请自己修改相关  **pci**，修改方法 https://www.bilibili.com/read/mobile/6353697 如果找不到的话也可以通过 **Hackintool的 PCI** 选项卡看*
 
    <img src="https://gitee.com/masonsxu/cloudimg/raw/master//img/image-20201114195956032.png" alt="image-20201114195956032"  />
 
