@@ -23,6 +23,7 @@
 5. 添加 `FCAP.aml` 并开启  `ACPI\Quirks\FadtEnableReset` 选项，能够开启长按开机键开启睡眠功能
 6. 添加 `SSDT-TPD0.aml` ，并在 `ACPI\Patch` 添加补丁信息
 7. 修改缓冲帧补丁，更换 `平台 id` 为 `0x591B0000`
+8. 更新 `OC` 版本为 `0.6.6`
 
 > 1/30/2021
 
