@@ -14,6 +14,16 @@
 
 **更新**
 
+> 2/11/2021
+
+1. 删除 `VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext`
+2. 删除 `VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext`
+3. 删除 `VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext`
+4. 调整 `kext`  驱动加载顺序(调整顺序的样例来源：[常见驱动加载顺序]( https://github.com/daliansky/OC-little/tree/master/%E5%B8%B8%E8%A7%81%E9%A9%B1%E5%8A%A8%E5%8A%A0%E8%BD%BD%E9%A1%BA%E5%BA%8F))
+5. 添加 `FCAP.aml` 并开启  `ACPI\Quirks\FadtEnableReset` 选项，能够开启长按开机键开启睡眠功能
+6. 添加 `SSDT-TPD0.aml` ，并在 `ACPI\Patch` 添加补丁信息
+7. 修改缓冲帧补丁，更换 `平台 id` 为 `0x591B0000`
+
 > 1/30/2021
 
 1. 完善 **USBPorts.kext**，解除端口限制（教程链接看[这里](https://blog.daliansky.net/Intel-FB-Patcher-USB-Custom-Video.html)）。
