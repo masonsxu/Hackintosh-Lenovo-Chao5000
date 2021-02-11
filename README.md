@@ -16,14 +16,15 @@
 
 > 2/11/2021
 
-1. 删除 `VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext`
-2. 删除 `VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext`
-3. 删除 `VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext`
+1. 更新 `OC` 版本为 `0.6.6`
+2. 修改缓冲帧补丁，更换 `平台 id` 为 `0x591B0000`
+3. 添加 `SSDT-TPD0.aml` ，并在 `ACPI\Patch` 添加补丁信息
 4. 调整 `kext`  驱动加载顺序(调整顺序的样例来源：[常见驱动加载顺序]( https://github.com/daliansky/OC-little/tree/master/%E5%B8%B8%E8%A7%81%E9%A9%B1%E5%8A%A8%E5%8A%A0%E8%BD%BD%E9%A1%BA%E5%BA%8F))
-5. 添加 `FCAP.aml` 并开启  `ACPI\Quirks\FadtEnableReset` 选项，能够开启长按开机键开启睡眠功能
-6. 添加 `SSDT-TPD0.aml` ，并在 `ACPI\Patch` 添加补丁信息
-7. 修改缓冲帧补丁，更换 `平台 id` 为 `0x591B0000`
-8. 更新 `OC` 版本为 `0.6.6`
+5. 删除 `VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext`
+6. 删除 `VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext`
+7. 删除 `VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext`
+8. 添加 `FCAP.aml` 并开启  `ACPI\Quirks\FadtEnableReset` 选项，能够开启长按开机键开启睡眠功能
+9. ~~*通过添加 pci编码使得 VirtualSMC.kext 可以加载原生电源管理驱动，通过查看系统报告—>功能扩展—>**AppleLPC** 查看是否加载，如果没有加载请自己修改相关  **pci**，修改方法 https://www.bilibili.com/read/mobile/6353697 如果找不到的话也可以通过 **Hackintool的 PCI** 选项卡看。*~~ 通过 `CpuFriend.kext` 生成的 `CPUFriendDataProvider.kext` 就可以使用原生电源管理功能
 
 > 1/30/2021
 
@@ -55,7 +56,7 @@
 
 3. *精简了ACPI文件夹中的文件，删除了一些对系统没有作用的 **.aml**文件。*
 
-4. *通过添加 pci编码使得 VirtualSMC.kext 可以加载原生电源管理驱动，通过查看系统报告—>功能扩展—>**AppleLPC** 查看是否加载，如果没有加载请自己修改相关  **pci**，修改方法 https://www.bilibili.com/read/mobile/6353697 如果找不到的话也可以通过 **Hackintool的 PCI** 选项卡看。*
+4. ~~*通过添加 pci编码使得 VirtualSMC.kext 可以加载原生电源管理驱动，通过查看系统报告—>功能扩展—>**AppleLPC** 查看是否加载，如果没有加载请自己修改相关  **pci**，修改方法 https://www.bilibili.com/read/mobile/6353697 如果找不到的话也可以通过 **Hackintool的 PCI** 选项卡看。*~~ 通过 `CpuFriend.kext` 生成的 `CPUFriendDataProvider.kext` 就可以使用原生电源管理功能
 
    <img src="https://gitee.com/masonsxu/cloudimg/raw/master//img/image-20201114195956032.png" alt="image-20201114195956032"  />
 
@@ -89,5 +90,5 @@
 
 xjn：[使用 OpenCore 引导黑苹果](https://blog.xjn819.com/post/opencore-guide.html)
 
-黑果小兵：Hackintool(Intel FB Patcher) USB定制视频
+黑果小兵：[Hackintool(Intel FB Patcher) USB定制视频](https://www.bilibili.com/video/BV1xt411k79A)
 
