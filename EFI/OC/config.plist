@@ -45,13 +45,13 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>Windows 2015 to Darwin</string>
+				<string>TPD0: _STA to XSTA</string>
 				<key>Count</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>V2luZG93cyAyMDE1AA==</data>
+				<data>X1NUQQ==</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
@@ -59,11 +59,11 @@
 				<key>OemTableId</key>
 				<data></data>
 				<key>Replace</key>
-				<data>RGFyd2luAKOjo6Ojow==</data>
+				<data>WFNUQQ==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
-				<integer>0</integer>
+				<integer>26</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
