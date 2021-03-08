@@ -12,7 +12,14 @@
 
 ------
 
-**更新**
+**更新:**
+
+>3/8/2021
+
+1. 添加 `SSDT-ALS0.aml`，显示自动调节亮度选项
+2. 修改 `NVRAM/add/4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14/UIScale` 值为 `02`，开启`hidpi`时调整开机Logo显示相同大小
+3. 删除`CleanNvram.efi`，开机同时按下`CMD+OPT+P+R`健，选择清理`Nvram`
+4. 更新`OpenCore`与`所有驱动`为最新版本
 
 > 2/11/2021
 
