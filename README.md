@@ -34,11 +34,24 @@
 
 ## **更新:**
 
+> 15/4/2021
+
+1. 更新`OC`版本为`0.6.8`
+2. 更新`所有驱动`为最新版本
+3. 新增`未解锁CFG选项`的EFI引导，并将`已解锁`和`未解锁`区分开
+4. `EFI`引导文件全部默认开启`-v keepsyms=1 `，系统成功引导以后删除即可
+5. 关闭`hidpi`（在1080的屏幕上感觉没什么作用，还影响开机体验，索性关了）
+6. 修改 `NVRAM/add/4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14/UIScale` 值为 `01`，关闭hidpi以后需要改回来
+
+> 29/3/2021
+
+1. 修改`SecureBootModel`为`Default`
+
 >3/8/2021
 
 1. 添加 `SSDT-ALS0.aml`，显示自动调节亮度选项
 2. 修改 `NVRAM/add/4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14/UIScale` 值为 `02`，开启`hidpi`时调整开机Logo显示相同大小
-3. 删除`CleanNvram.efi`，开机同时按下`CMD+OPT+P+R`健，选择清理`Nvram`
+3. 删除`CleanNvram.efi`，开机同时按下`CMD+OPT+P+R`健，选择`Reset Nvram`
 4. 更新`OpenCore`与`所有驱动`为最新版本
 
 > 2/11/2021
