@@ -102,6 +102,8 @@
 			<false/>
 			<key>ResetLogoStatus</key>
 			<false/>
+			<key>SyncTableIds</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>Booter</key>
@@ -715,6 +717,8 @@
 		</dict>
 		<key>Scheme</key>
 		<dict>
+			<key>CustomKernel</key>
+			<false/>
 			<key>FuzzyMatch</key>
 			<true/>
 			<key>KernelArch</key>
@@ -926,7 +930,7 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02710609J9J1JHJC</string>
+			<string>C02710902QXJ1JHJA</string>
 			<key>ProcessorType</key>
 			<integer>1797</integer>
 			<key>ROM</key>
@@ -938,9 +942,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro14,3</string>
 			<key>SystemSerialNumber</key>
-			<string>C02TD8YKHTD5</string>
+			<string>C02TDEYNHTD5</string>
 			<key>SystemUUID</key>
-			<string>E519BEF6-B713-4C3C-994D-933E715328C8</string>
+			<string>83AD717D-80CE-43B7-A356-5222D461A98D</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
